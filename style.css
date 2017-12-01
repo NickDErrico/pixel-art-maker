@@ -1,0 +1,65 @@
+#container {
+  border: none;
+  bottom: 30px;
+  font-size: 0;
+  height:800px;
+  margin:auto;
+  padding: 0;
+	position: relative;
+	top: 30px;
+	width:800px;
+}
+
+.grid {
+  border:none;
+  display:inline-block;
+	margin:0;
+  outline:1px solid gray;
+	padding:0;
+}
+
+.footer {
+
+}
+
+.red {
+  background-color: red;
+  margin-left: 22px;
+  margin-top: 40px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.chartreuse {
+  background-color: chartreuse;
+}
+
+.maroon {
+  background-color: maroon;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orchid {
+  background-color: orchid;
+}
+
+.purple {
+  background-color: purple;
+}
