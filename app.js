@@ -1,3 +1,4 @@
+
 $(function() {
 
   function pixelGrid(num) {
@@ -9,15 +10,20 @@ $(function() {
       $('.grid').height(800/num);
     }
   }
-  pixelGrid(60)
+  pixelGrid(80)
 
+  function colorChanged(value) {
+      document.getElementById("colorValue").innerHTML = value;
+      document.getElementById("colorCanvas").style.backgroundColor = value;
+    }
 
-  $('button').on('click', function() {
-    let colorChoice = $(this).text()
-    $('.grid').on('click', function() {
-      $(this).css('background-color', colorChoice);
-    })
-  })
+    $('input[type="color"]').on('change', function() {
+      colorChanged($(this).val())
+    });
+
+    $('.grid').click(function() {
+      $(this).css('background-color', document.getElementById('colorWell').value)
+    });
 
 
 
